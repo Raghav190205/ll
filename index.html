@@ -6,13 +6,23 @@
 <title>MY LOVE</title>
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Georgia,serif;}
-
+html, body {
+  width: 100%;
+  min-height: 100%;
+  background-color: #c23a54; /* same as gradient end */
+  overscroll-behavior: none;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Georgia,serif;
+}
 body{
   min-height:100vh;
   background:linear-gradient(180deg,#f7a1b2,#e66a85,#c23a54);
-  background-attachment:fixed;
   overflow-x:hidden;
+  overscroll-behavior-y: none;
   display:flex;
   justify-content:center;
   padding:80px 30px;
@@ -454,3 +464,4 @@ muteBtn.addEventListener("click", () => {
 
 </body>
 </html>
+
