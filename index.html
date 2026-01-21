@@ -53,24 +53,31 @@ background:transparent;
 }
 
 
-/* ZOOM OUT */
-@keyframes heartZoom {
-  0% {
-    transform: scale(0.2);
-    opacity: 0;
-    filter: blur(2px);
+@media (max-width: 600px) {
+
+  .heart-transition span {
+    font-size: 56px; /* slightly bigger heart on mobile */
   }
-  40% {
-    transform: scale(6);
-    opacity: 1;
-    filter: blur(0);
-  }
-  100% {
-    transform: scale(12);
-    opacity: 0;
-    filter: blur(6px);
+
+  @keyframes heartZoom {
+    0% {
+      transform: scale(0.3);
+      opacity: 0;
+      filter: blur(1px);
+    }
+    45% {
+      transform: scale(4.5);
+      opacity: 1;
+      filter: blur(0);
+    }
+    100% {
+      transform: scale(8);
+      opacity: 0;
+      filter: blur(4px);
+    }
   }
 }
+
 
 
 .container{max-width:740px;width:100%;position:relative;z-index:2;}
@@ -289,3 +296,4 @@ showPage(index);
 
 </body>
 </html>
+
